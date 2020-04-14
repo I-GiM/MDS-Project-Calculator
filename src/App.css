@@ -1,38 +1,70 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.head {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calc-bg {
+  background-image: linear-gradient(to right, rgba(255,128,8,1),rgba(255,200,55,1));
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.res {
+  width: 22.5rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  text-align: right;
+  color: #3c3b3b;
+  font-size: 1.5rem;
+}
+
+.operate-bg {
+  background-color: #fff;
+}
+
+.operate {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+button.btn {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #c4c4c4;
+  color: #3c3b3b;
+}
+
+button.mod {
+  padding: 0;
+
+}
+
+button.clear {
+  color: #fff;
+}
+
+button.equals {
+  grid-row-start: 3;
+  grid-row-end: 6;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  height: inherit;
+}
+
+button.ico {
+  filter: invert(16%) sepia(47%) saturate(0%) hue-rotate(251deg) brightness(99%) contrast(83%);
 }
