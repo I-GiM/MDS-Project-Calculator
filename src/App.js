@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/styles.css'; 
+import Calculator from './layout/Calculator/calculator';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+const app = () => (
+  <div className="app">
+    <div className="head">
+      <img className="px-2" src="https://bit.ly/2JXXLL0" alt="calc icon"/>
+      <p className="font-weight-bold px-2 mb-0">SIMPLE CALCULATOR</p>
+    </div>    
+    <Calculator />
+  </div>
+);
+
+
+
+export default app;
+
